@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+ 	<Title>CastelloBranco.AnnotationsMarkupExtensions.Avalonia</Title>
+	<Authors>Castello Branco Tecnologia</Authors>
+	<PackageId>CastelloBranco.AnnotationsMarkupExtensions.Avalonia</PackageId>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Description>Markup Extensions to use DataAnnotations in XAML</Description>
+	  <Copyright>Castello Branco Tecnologia</Copyright>
+	  <AssemblyName>CastelloBranco.AnnotationsMarkupExtensions.Avalonia</AssemblyName>
+	  <RootNamespace>CastelloBranco.AnnotationsMarkupExtensions.Avalonia</RootNamespace>
+	  <SignAssembly>False</SignAssembly>
+	  <Company>Castello Branco Tecnologia</Company>
+	  <Product>CastelloBranco.AnnotationsMarkupExtensions.Avalonia</Product>
+	  <Version>1.0.3</Version>
+	  <PackageProjectUrl>https://github.com/CastelloBrancoTecnologia/AnnotationsMarkupExtensions.Avalonia</PackageProjectUrl>
+	  <RepositoryUrl>https://github.com/CastelloBrancoTecnologia/AnnotationsMarkupExtensions.Avalonia</RepositoryUrl>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="11.1.4" />
+    <PackageReference Include="CastelloBranco.DataAnnotations" Version="3.0.0.10" />
+  </ItemGroup>
+
+  <Target Name="PushNuGetPackage" AfterTargets="GenerateNuspec">
+	<Message Text="Push NuGet Package to NuGet Feed" Importance="high"></Message>
+	<Exec Command="$(ProjectDir)..\publicanuget.cmd &quot;$(ProjectDir)bin\$(Configuration)\$(AssemblyName).$(Version).nupkg&quot; "></Exec>
+  </Target>
+
+</Project>
