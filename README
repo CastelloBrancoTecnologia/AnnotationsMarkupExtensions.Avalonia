@@ -12,6 +12,20 @@ This project provides a Avalonia MarkupExtension called AnnotateExtension to bin
 
 - Built-in logic for setting InputScope based on data annotations like EmailAddress, Password, Phone, etc.
 
+# Supported Annotations / Atttributes
+
+    - DisplayName      => Binds to the DisplayAttribute Name applyed to Property  
+    - ShortDisplayName => Binds to the DisplayAttribute ShortName3 applyed to Property 
+    - Description      => Binds to the DisplayAttribute Description applyed to Property 
+    - MaxLength        => Binds to the LengthAttribute, StrinLengthAttribute ou MaxLengthAttribute applyed to Property  
+    - MinLength        => Binds to the LengthAttribute, StrinLengthAttribute ou MinLengthAttribute applyed to Property 
+    - MaxValue         => Binds to the RangeAttribute applyed to Property 
+    - MinValue         => Binds to the RangeAttribute applyed to Property 
+    - Prompt           => Binds to the DisplayAttribute Prompt applyed to Property   
+    - DisplayFormat    => Binds to the DisplayFormatAttribute applyed to Property 
+    - IsReadOnly       => Binds to the  ReadOnlyAttribute applyed to Property 
+    - Mask             => Binds to the MaskAttribute applyed to Property  
+
 # License
 
 - This project is licensed under the MIT License.
