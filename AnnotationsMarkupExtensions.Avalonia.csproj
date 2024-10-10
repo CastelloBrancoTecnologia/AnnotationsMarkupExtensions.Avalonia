@@ -19,6 +19,7 @@
 	  <Version>1.0.3</Version>
 	  <PackageProjectUrl>https://github.com/CastelloBrancoTecnologia/AnnotationsMarkupExtensions.Avalonia</PackageProjectUrl>
 	  <RepositoryUrl>https://github.com/CastelloBrancoTecnologia/AnnotationsMarkupExtensions.Avalonia</RepositoryUrl>
+	  <AssemblyVersion>2410.9.1912.1</AssemblyVersion>
 
   </PropertyGroup>
 
